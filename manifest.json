@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "click word",
+  "description": "base level extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/hello.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": ["storage"]
+}
